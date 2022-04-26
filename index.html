@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>To do List</title>
+  </head>
+
+  <body>
+    <section class="title-wrapper">
+      <img src="arrow.png" alt="seta decorativa" class="title-border-l" />
+      <h1 class="title-text">To do List</h1>
+      <img src="arrow.png" alt="seta decorativa" class="title-border-r" />
+    </section>
+
+    <section class="input-wrapper">
+      <input
+        class="list-input"
+        type="text"
+        name="item"
+        placeholder="Tarefa a realizar"
+      />
+      <button class="input-button">Inserir</button>
+    </section>
+
+    <section class="list-elements">
+      <div class="item-wrapper">
+        <input class="item-checkbox" type="checkbox" id="todo-item" />
+        <label class="item-text" for="todo-item">tarefa a fazer</label>
+      </div>
+    </section>
+  </body>
+</html>

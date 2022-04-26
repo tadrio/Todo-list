@@ -1,0 +1,107 @@
+:root {
+  --background: #b9d7cb;
+  --title-font: "Indie Flower";
+  --list-font: "Comfortaa";
+  --text-color: #285241;
+  --white: #FFFFFF;
+
+  --width: 30rem;
+
+}
+
+body {
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  width: var(--width);
+}
+
+.title-text {
+  font-family: var(--title-font);
+  font-size: 3.5rem;
+  color: var(--text-color);
+}
+
+.title-border-l {
+  height: 1.5rem;
+  transform: rotate(180deg);
+}
+
+.title-border-r {
+  height: 1.5rem;
+}
+
+.input-wrapper{
+  width: var(--width);
+  background-color: var(--text-color);
+  padding: 1rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content:space-between;  
+  box-sizing: border-box;
+
+}
+
+.list-input{
+  width: 70%;
+  border-radius: 15px;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  font-family: var(--list-font);
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.input-button{
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 25%;
+  font-family: var(--list-font);
+  font-weight: 700;
+  background-color: var(--white);
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+.input-button:hover{
+background-color: var(--background);
+}
+
+.input-button:active{
+  background-color: var(--text-color);
+  color:var(--white);
+}
+
+.item-wrapper{
+  width: var(--width);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.item-checkbox{
+height: 20px;
+width: 20px;
+}
+
+.item-text{
+  color: var(--text-color);
+  font-family: var(--list-font);
+  font-weight: 700;
+}
+
+.item-text-checked{
+  text-decoration: line-through;
+}
